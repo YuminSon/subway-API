@@ -13,7 +13,7 @@ API that helps build a subway object with interconnected stations and lines
 
 ## Details
 - Each `Station` instance has `name`, `line`, `adjacent`, and `transfer` attributes. `adjacent` is a list with the `Station` instances of stations that are directly connected. `transfer` is a list that holds the names of the lines that also has a `Station` instance of the same name.
-- `Line` instances have `name`, `station_names`, and `stations` attributes. While `stations` is a list of the `Station` instances the line has, `station_names` is consisted of the names of the stations.
+- `Line` instances have `name`, `station_names`, and `stations` attributes. While `stations` is a list of the `Station` instances the line has, `station_names` is consisted of the names of the stations. You can retrieve a `Station` instance by its name using the `Line.get_station()` method.
 - A `Subway` instance is defined with a name and the lines it covers. The attribute `lines` is a dictionary that has the line names as the keys and the `Line` instances as the values.
 - In order to create your own subway system, first edit `stations.txt` and remove or add stations. The syntax is as follows in EBNF. 'o' stands for 'one-way', and 't' for 'two-way'.
 ```EBNF
