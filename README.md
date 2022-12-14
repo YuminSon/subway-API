@@ -2,7 +2,7 @@
 API that helps build a subway object with interconnected stations and lines
 
 ## Key Points
-- Can handle multiple paths, circulative parts, one-way designs in a line.
+- Can handle multiple paths, circulative parts, and one-way designs in subway lines.
 - Automatically detects transfer stations.
 - Comes with Seoul Metropolitan Subway for example.
 
